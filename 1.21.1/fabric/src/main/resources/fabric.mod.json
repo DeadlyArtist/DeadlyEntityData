@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": $mod_authors,
+  "contact": {
+    "homepage": "${homepage}",
+    "sources": "${source}",
+    "issues": "${issues}"
+  },
+  "license": "${license}",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "deadlyentitydata.fabric.ModEntryFabric"
+    ],
+    "client": [
+      "deadlyentitydata.fabric.client.ExampleModFabricClient"
+    ],
+    "cardinal-components-entity": [
+      "deadlyentitydata.fabric.component.ModComponentEntry"
+    ]
+  },
+  "mixins": [
+    "deadlyentitydata.mixins.json",
+    "deadlyentitydata.fabric.mixins.json"
+  ],
+  "custom": {
+    "cardinal-components": [
+      "deadlyentitydata:nbt"
+    ]
+  },
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": $compatible_minecraft_versions,
+    "java": ">=${java_version}"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

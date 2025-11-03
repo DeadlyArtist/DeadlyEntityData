@@ -1,2 +1,2 @@
-# DeadlyEntityData
-Minecraft library mod to add custom data to entities via NBT (fabric, neoforge).
+# Deadly Entity Data
+Minecraft multiplatform library mod to add custom NBT data to entities.
